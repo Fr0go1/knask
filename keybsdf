@@ -1,0 +1,63 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Player = game.Players.LocalPlayer
+local Window = OrionLib:MakeWindow({Name = "Key System", HidePremium = false, SaveConfig = true, IntroEnabled = false, ConfigFolder = "ShittyKeySystem"})
+
+OrionLib:MakeNotification({
+	Name = "Logged In!",
+	Content = "You Are Logged In As"..Player.Name..".",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+local Key = loadstring(game:HttpGet("https://pastebin.com/raw/qSvm1wmE"))()
+local KeyInput = "String"
+
+function loadscript()
+    OrionLib:Destroy()
+end
+
+function correctkey()
+    OrionLib:MakeNotification({
+        Name = "Correct Key",
+        Content = "You have entered the correct key",
+        Image = "rbxassetid://4483345998",
+        Time = 5
+    })
+end
+
+function incorrectkey()
+    OrionLib:MakeNotification({
+        Name = "ERROR -- Incorrect Key",
+        Content = "You have entered the Incorrect key",
+        Image = "rbxassetid://4483345998",
+        Time = 5
+    })
+end
+
+local Tab = Window:MakeTab({
+	Name = "Key",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddTextbox({
+	Name = "Enter Key",
+	Default = "",
+	TextDisappear = false,
+	Callback = function(Value)
+		KeyInput = Value
+	end	  
+})
+
+Tab:AddButton({
+	Name = "Check Key",
+	Callback = function()
+      	if KeyInput == Key then
+            correctkey()
+            Wait(1)
+            loadscript()
+        else
+            incorrectkey()
+        end 
+  	end    
+})
