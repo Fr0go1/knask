@@ -63,13 +63,13 @@ Tab:AddButton({
   	end    
 })
 
-local 1Tab = Window:MakeTab({
+local keyTab = Window:MakeTab({
 	Name = "Get Key",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
 
-1Tab:AddButton({
+keyTab:AddButton({
 	Name = "Get Key",
 	Callback = function()
       		setclipboard("https://discord.gg/ssz2eNEMvk")
@@ -78,4 +78,4 @@ local 1Tab = Window:MakeTab({
   	end    
 })
 
-1Tab:AddLabel("^Key Will Be Copied To Clipboard^")
+keyTab:AddLabel("^Key Will Be Copied To Clipboard^")
