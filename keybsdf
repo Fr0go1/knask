@@ -35,15 +35,6 @@ function incorrectkey()
     })
 end
 
-function getkey()
-    OrionLib:MakeNotification({
-        Name = "Link Copied",
-        Content = "The Link Has Been Copied To Your Clipboard",
-        Image = "rbxassetid://4483345998",
-        Time = 5
-    })
-end
-
 local Tab = Window:MakeTab({
 	Name = "Key",
 	Icon = "rbxassetid://4483345998",
@@ -68,15 +59,6 @@ Tab:AddButton({
             loadscript()
         else
             incorrectkey()
-        end 
-  	end    
-})
-
-Tab:AddButton({
-	Name = "Get Key",
-	Callback = function()
-        setclipboard("https://discord.gg/ssz2eNEMvk")
-        getkey()
         end 
   	end    
 })
