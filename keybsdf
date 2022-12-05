@@ -9,7 +9,7 @@ OrionLib:MakeNotification({
 	Time = 5
 })
 
-local Key = loadstring(game:HttpGet("https://pastebin.com/raw/qSvm1wmE"))()
+local Key = loadstring(game:HttpGet("https://pastebin.com/raw/kKKWnYkx"))()
 local KeyInput = "String"
 
 function loadscript()
