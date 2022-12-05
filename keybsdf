@@ -12,8 +12,15 @@ OrionLib:MakeNotification({
 local Key = loadstring(game:HttpGet("https://pastebin.com/raw/kKKWnYkx"))()
 local KeyInput = "String"
 
+local hwid = game:GetService("RbxAnalyticsService"):GetClientId()
+local whitelisthwid = loadstring(game:HttpGet("https://pastebin.com/raw/4Yzx6xK7"))()
+
 function loadscript()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Fr0go1/akdhfdsiujhkjbsda/main/fdssdfadsafdsffdsahgfgsdasfdzvabfdhgfnddhfsgdaasfsdafbfsdhdfgdfgsdadsafdsgagdfsdfsdgsfbsxfvfxssd"))()
+end
+
+if hwid == whitelisthwid then
+    loadscript()
 end
 
 function correctkey()
