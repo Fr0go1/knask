@@ -9,6 +9,8 @@ OrionLib:MakeNotification({
 	Time = 5
 })
 
+print("hello")
+
 local Key = loadstring(game:HttpGet("https://pastebin.com/raw/kKKWnYkx"))()
 local KeyInput = "String"
 
@@ -19,7 +21,7 @@ function loadscript()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Fr0go1/akdhfdsiujhkjbsda/main/fdssdfadsafdsffdsahgfgsdasfdzvabfdhgfnddhfsgdaasfsdafbfsdhdfgdfgsdadsafdsgagdfsdfsdgsfbsxfvfxssd"))()
 end
 
-
+print("hello1")
 
 function correctkey()
     OrionLib:MakeNotification({
@@ -39,28 +41,23 @@ function incorrectkey()
     })
 end
 
-function whitelist()
-    OrionLib:MakeNotification({
-        Name = "ERROR -- whitelist",
-        Content = "whitelist",
-        Image = "rbxassetid://4483345998",
-        Time = 5
-    })
-end
+print("hello2")
 
 for i,v in pairs(whitelisthwid) do
     if v == hwid then
         loadscript()
-	else
-	whitelist()
     end
 end
+
+print("hello3")
 
 local Tab = Window:MakeTab({
 	Name = "Key",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
+
+print("hello4")
 
 Tab:AddTextbox({
 	Name = "Enter Key",
@@ -89,6 +86,8 @@ local keyTab = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
+
+print("hello5")
 
 keyTab:AddButton({
 	Name = "Get Key",
