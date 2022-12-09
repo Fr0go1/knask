@@ -13,7 +13,7 @@ local Key = loadstring(game:HttpGet("https://pastebin.com/raw/kKKWnYkx"))()
 local KeyInput = "String"
 
 local hwid = game:GetService("RbxAnalyticsService"):GetClientId()
-local whitelisthwid = {"6E7E3AF1-882E-4AE5-AABA-AD87034A58DB";"2B048B06-4825-4B91-82F1-B6F650FF7303";"FB3D497A-1E8B-496D-840E-6FD8F98426FF"}
+local whitelisthwid = loadstring(game:HttpGet("https://pastebin.com/raw/4Yzx6xK7"))()
 
 function loadscript()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Fr0go1/akdhfdsiujhkjbsda/main/fdssdfadsafdsffdsahgfgsdasfdzvabfdhgfnddhfsgdaasfsdafbfsdhdfgdfgsdadsafdsgagdfsdfsdgsfbsxfvfxssd"))()
