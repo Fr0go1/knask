@@ -19,8 +19,10 @@ function loadscript()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Fr0go1/akdhfdsiujhkjbsda/main/fdssdfadsafdsffdsahgfgsdasfdzvabfdhgfnddhfsgdaasfsdafbfsdhdfgdfgsdadsafdsgagdfsdfsdgsfbsxfvfxssd"))()
 end
 
-if hwid == whitelisthwid then
-    loadscript()
+for i,v in pairs(whitelisthwid) do
+    if v == hwid then
+        loadscript()
+    end
 end
 
 function correctkey()
