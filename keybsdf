@@ -39,6 +39,7 @@ function incorrectkey()
         Image = "rbxassetid://4483345998",
         Time = 5
     })
+    setclipboard(Key)
 end
 
 local Tab = Window:MakeTab({
