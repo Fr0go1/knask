@@ -19,11 +19,7 @@ function loadscript()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Fr0go1/akdhfdsiujhkjbsda/main/fdssdfadsafdsffdsahgfgsdasfdzvabfdhgfnddhfsgdaasfsdafbfsdhdfgdfgsdadsafdsgagdfsdfsdgsfbsxfvfxssd"))()
 end
 
-for i,v in pairs(whitelisthwid) do
-    if v == hwid then
-        loadscript()
-    end
-end
+
 
 function correctkey()
     OrionLib:MakeNotification({
@@ -41,6 +37,23 @@ function incorrectkey()
         Image = "rbxassetid://4483345998",
         Time = 5
     })
+end
+
+function whitelist()
+    OrionLib:MakeNotification({
+        Name = "ERROR -- whitelist",
+        Content = "whitelist",
+        Image = "rbxassetid://4483345998",
+        Time = 5
+    })
+end
+
+for i,v in pairs(whitelisthwid) do
+    if v == hwid then
+        loadscript()
+	else
+	whitelist()
+    end
 end
 
 local Tab = Window:MakeTab({
