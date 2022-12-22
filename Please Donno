@@ -46,6 +46,8 @@ print("hello2")
 for i,v in pairs(whitelisthwid) do
     if v == hwid then
         loadscript()
+	Wait(1)
+	OrionLib:Destroy()
     end
 end
 
