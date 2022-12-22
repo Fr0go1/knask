@@ -1,0 +1,101 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Player = game.Players.LocalPlayer
+local Window = OrionLib:MakeWindow({Name = "Key System", HidePremium = false, SaveConfig = false, IntroEnabled = false, ConfigFolder = "ShittyKeySystem"})
+
+OrionLib:MakeNotification({
+	Name = "Logged In!",
+	Content = "You Are Logged In As"..Player.Name..".",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+print("hello")
+
+local Key = loadstring(game:HttpGet("https://pastebin.com/raw/kKKWnYkx"))()
+local KeyInput = "String"
+
+local hwid = game:GetService("RbxAnalyticsService"):GetClientId()
+local whitelisthwid = loadstring(game:HttpGet("https://pastebin.com/raw/4Yzx6xK7"))()
+
+function loadscript()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Fr0go1/begggg/main/monkey"))()
+end
+
+print("hello1")
+
+function correctkey()
+    OrionLib:MakeNotification({
+        Name = "Correct Key",
+        Content = "You have entered the correct key",
+        Image = "rbxassetid://4483345998",
+        Time = 5
+    })
+end
+
+function incorrectkey()
+    OrionLib:MakeNotification({
+        Name = "ERROR -- Incorrect Key",
+        Content = "You have entered the Incorrect key",
+        Image = "rbxassetid://4483345998",
+        Time = 5
+    })
+end
+
+print("hello2")
+
+for i,v in pairs(whitelisthwid) do
+    if v == hwid then
+        loadscript()
+    end
+end
+
+print("hello3")
+
+local Tab = Window:MakeTab({
+	Name = "Key",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+print("hello4")
+
+Tab:AddTextbox({
+	Name = "Enter Key",
+	Default = "",
+	TextDisappear = false,
+	Callback = function(Value)
+		KeyInput = Value
+	end	  
+})
+
+Tab:AddButton({
+	Name = "Check Key",
+	Callback = function()
+      	if KeyInput == Key then
+            correctkey()
+            Wait(1)
+            loadscript()
+        else
+            incorrectkey()
+        end 
+  	end    
+})
+
+local keyTab = Window:MakeTab({
+	Name = "Get Key",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+print("hello5")
+
+keyTab:AddButton({
+	Name = "Get Key",
+	Callback = function()
+      		setclipboard("https://discord.gg/ssz2eNEMvk")
+		wait(1)
+		print("Got Key")
+  	end    
+})
+
+keyTab:AddLabel("^Key Will Be Copied To Clipboard^")
