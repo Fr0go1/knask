@@ -78,7 +78,7 @@ Tab:AddButton({
             Wait(1)
             loadscript()
 	    Wait(0.2)
-	    UI:Destroy()
+	    Orion:Destroy()
         else
             incorrectkey()
         end 
